@@ -1,5 +1,6 @@
 # 4alasuite
-Qu'est ce que lon fait ? et qui fat quoi ?
+
+Qu'est ce que l'on fait ? et qui fat quoi ?
 
 Joueur et presentateur
 affichage pour presentateur
@@ -17,7 +18,7 @@ affichage des point en jauge
 les touche
 timeur
 
-programme Axel ( JS ) Anastasia ( HTML, CSS )
+programme Axel ( JS, HTML, ) Anastasia ( CSS )
 
 tableau des questions
 variable aleatoire
@@ -25,21 +26,26 @@ createur de div et de zone de texte
 timeur
 starte
 
-Direction artistique anna anastasia
+Direction artistique anna anastasia meline
 
 Logo
 une typo
 Deux jauges
 couleur
 
-Son Axel Anna
+Son Anna Meline
 
+chanson
 son victoire
 son defait
 son bonne reponce
 son de mauvaise reponce
 son de debut ( jinguel )
 ( son de question )
+
+figma
+
+proto
 
 Question Nous tous
 
