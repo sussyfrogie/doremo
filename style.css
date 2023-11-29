@@ -1,10 +1,68 @@
-body {
-    background-color: #333;
-    margin:0;
-  };
-  positif {
-    background-color: aqua;
-  };
-  negatif{
-    background-color: brown
-  };
+body{
+  margin: 0;
+  background-color: #FDEEFF;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+.commencer{
+  cursor: pointer;
+  border: 2px solid #FBCA04;
+  outline: none;
+  padding: 0;
+  background-color: #FBCA04;
+  border-radius: 10px;
+  padding-left: 5px;
+  transition: all 0.5s;
+  margin-bottom: 12px;
+}
+
+.commencer:hover{
+  background-color: #f7da66;
+  border: 2px solid  #FDEEFF;
+}
+
+.consignes{
+  cursor: pointer;
+  border: 2px solid #FBCA04;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  background-color: #FBCA04;
+  border-radius: 10px;
+  padding-left: 5px;
+  transition: all 0.5s;
+}
+
+.consignes:hover{
+  background-color: #f7da66;
+  border: 2px solid  #FDEEFF;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.positif{
+background-color: aqua;
+};
+
+.negatif{
+   background-color: brown
+};
