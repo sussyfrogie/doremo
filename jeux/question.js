@@ -1,4 +1,4 @@
-$.getJSON("data1.json", function (data) {
+$.getJSON("jeux/question.json", function (data) {
 
     const sleep = (time) => {
         return new Promise((resolve) => setTimeout(resolve, time))
