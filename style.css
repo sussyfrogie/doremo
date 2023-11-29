@@ -59,10 +59,22 @@ main{
   flex-direction: column;
 }
 
+.barredescore{
+  background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .positif{
 background-color: aqua;
+width: 800px;
+margin-bottom: 10px;
 };
 
 .negatif{
-   background-color: brown
+   background-color: brown;
+   width: 800px;
+   margin-bottom: 10px;
 };
