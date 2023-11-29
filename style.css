@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   margin: 0;
   background-color: #FDEEFF;
@@ -8,7 +14,7 @@ body{
   height: 100vh;
 }
 
-main{
+.mains{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,23 +65,74 @@ main{
   flex-direction: column;
 }
 
-.barredescore{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#games {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: blue;
+  height: 100%;
+  width: 100%;
 }
 
-.positif{
-background-color: aqua;
-color: aqua;
-width: 80px;
-margin-bottom: 80px;
-};
+#games main {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  height: 100%;
+  width: 80%;
+}
 
-.negatif{
-   background-color: brown;
-   color: brown;
-   width: 80px;
-   margin-bottom: 80px;
-};
+#games aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 100%;
+  width: 20%;
+}
+
+#card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  width: 500px;
+  height: 300px;
+}
+
+#games aside #bar div {
+  background-color: rgb(119, 119, 119);
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+}
+
+#games aside #bar div:first-child {
+  border-radius: 50% 50% 0% 0%;
+}
+
+#games aside #bar div:last-child {
+  border-radius: 0% 0% 50% 50%;
+}
+
+#btn {
+  display: none;
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+#btn:hover {
+  cursor: pointer;
+}
+
+#btn img {
+  height: 100%;
+  width: 100%;
+}
