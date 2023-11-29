@@ -1,5 +1,6 @@
 var score = 0
-var bare = document.createElement("div")
+const bare = document.createElement("div")
+console.log(1111)
 if (score=0) {
     for (let i=0;i==4;i++){
         const point = document.bare.appendChild(document.createElement("div"))
