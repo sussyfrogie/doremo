@@ -60,7 +60,6 @@ main{
 }
 
 .barredescore{
-  background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,12 +68,14 @@ main{
 
 .positif{
 background-color: aqua;
-width: 800px;
-margin-bottom: 10px;
+color: aqua;
+width: 80px;
+margin-bottom: 80px;
 };
 
 .negatif{
    background-color: brown;
-   width: 800px;
-   margin-bottom: 10px;
+   color: brown;
+   width: 80px;
+   margin-bottom: 80px;
 };
