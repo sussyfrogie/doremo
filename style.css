@@ -1,4 +1,10 @@
 body {
     background-color: #333;
     margin:0;
-  }
+  };
+  positif {
+    background-color: aqua;
+  };
+  negatif{
+    background-color: brown
+  };
