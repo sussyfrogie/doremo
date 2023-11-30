@@ -82,17 +82,17 @@ const questions = [
         {
             "questions": "Quel est le titre et l'auteur de cette chanson ?",
             "reponse": "Bad Guy de Billie Eilish",
-            "musique": "Bad Guy - Billie Eilish"
+            "musique": "bad_guy_eilish.mp3"
         },
         {
             "questions": "Quel est le titre et l'auteur de cette chanson ?",
             "reponse": "Michael Jackson, Beat it",
-            "musique": "Michael Jackson, Beat it"
+            "musique": "beat_michael_jackson.mp3"
         },
         {
             "questions": "Avec quel artiste Koba a t il chanté sur cette musique?",
             "reponse": "Gazo",
-            "musique": "Daddy chocolat, koba/Gazo"
+            "musique": "daddy_chocolat_kobalad.mp3"
         },
         {
             "questions": "Qui est le rappeur le plus ecouté de france?",
@@ -117,12 +117,12 @@ const questions = [
         {
             "questions": "Quel est le titre et l'auteur de cette chanson ?",
             "reponse": "a sky full of stars, coldplay",
-            "musique": "a sky full of stars, coldplay"
+            "musique": "sky_stars_coldplay.mp3"
         },
         {
             "questions": "De quel film provient cet extrait ?",
             "reponse": "Le magicien d'Oz",
-            "musique": "extrait Somewhere over the rainbow (de Judy Garland)"
+            "musique": "somewhere_magicien_oz_1.mp3"
         },
         {
             "questions": "Quelle chanson démarre par : 'Tu ne vis que pour les caméras'",
@@ -142,7 +142,7 @@ const questions = [
         {
             "questions": "De quel film provient cet extrait ?",
             "reponse": "Le roi lion",
-            "musique": "Hakuna Matata"
+            "musique": "hakuna_roi_lion.mp3"
         },
         {
             "questions": "Qui chante Only God Can Judge Me ?",
@@ -152,13 +152,28 @@ const questions = [
         {
             "questions": "Qui a composé ce morceau de musique  ?",
             "reponse": "Tchaikovski",
-            "musique": "extrait Casse-Noisette"
+            "musique": "casse_noisette_tchaikovski.mp3"
         },
         {
             "questions": "En quelle année s'est déroulé la premiere edition du festival de Woodstock ?",
             "reponse": "1969",
             "musique": "fichier audio"
-        }
+        },
+        {
+            "questions": "Chantez la suite des paroles : 'Faut pas, non Qu'on s'attache'",
+            "reponse": " Et qu'on s'emprisonne ",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": " Chantez la suite des paroles : 'J'n'ai pas la science infuse ni'",
+            "reponse": "Le savoir faire de Bocuse, Soulman ",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quel chanteur français a découvert un cancer récemment ?",
+            "reponse": " Florent Pagny ",
+            "musique": "fichier audio"
+        },
     ];
 const card = document.getElementById('card');
 const question = card.querySelector('h1');
@@ -189,24 +204,30 @@ displayQuestion();
 document.addEventListener('keydown', function(event) {
     if (event.key === 'o') {
         displayQuestion();
-        levels[conteur].style.backgroundColor = 'turquoise';
+        levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
         conteur--;
+        console.log(conteur)
+        music.pause;
     } else if (event.key === 'n') {
         displayQuestion();
         levels.forEach(level => {
         level.style.backgroundColor = 'rgb(119, 119, 119)';
         conteur = 3;
-      });
+        music.pause      
+    });
     }
   });
-
 
 if (btn.style.display === "block") {
     btn.addEventListener('click', function() {
         console.log(btn.getAttribute("name"));
+        var music = new Audio(btn.getAttribute("name"));
+        console.log(music)
+        console.log(Audio)
+        music.play(Audio);
     })
 
-if (conteur === -1){
-    
 }
-}
+if (conteur === 0){
+        console.log (win);
+    }
