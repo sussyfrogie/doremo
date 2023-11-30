@@ -181,7 +181,7 @@ const questions = [
 
         function decompte() {
             const timer = document.getElementById('timer');
-            let i = 10; //temps voulu en S
+            let i = 300; //temps voulu en S
             let countdownInterval;
         
             function updateTimer() {
@@ -196,8 +196,10 @@ const questions = [
                 clearInterval(countdownInterval);
                 var audio = new Audio('defaite.mp3');
                 audio.play();
+                const looser = document.getElementById("looser");
+                looser.style.display = "flex"
                 setTimeout(function() {
-                    window.location.href = 'index.html';
+                    //window.location.href = 'index.html';
                 }, 5000);
               }
             }

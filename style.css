@@ -50,6 +50,33 @@ body{
   border: 2px solid black;
   text-align: center;
 }
+#looser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  height: 600px;
+  width: 600px;
+  display: none;
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  background: linear-gradient(90deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #4b0082, #ee82ee, #FF0000,#ff8000);
+  color: black;
+  border-radius: 10%;
+  animation: gradientAnimation 10s linear infinite;
+  background-size: 700% 700%;
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
 #closePopup {
   float: right;
   cursor: pointer;
