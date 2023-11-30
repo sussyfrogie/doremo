@@ -207,13 +207,11 @@ document.addEventListener('keydown', function(event) {
         levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
         conteur--;
         console.log(conteur)
-        music.pause;
     } else if (event.key === 'n') {
         displayQuestion();
         levels.forEach(level => {
         level.style.backgroundColor = 'rgb(119, 119, 119)';
-        conteur = 3;
-        music.pause      
+        conteur = 3;  
     });
     }
   });
