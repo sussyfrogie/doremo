@@ -58,6 +58,10 @@ body{
   font-size: 16px;
   color: #555;
 }
+#closePopup img{
+  height: 50px;
+  width: 50px;
+}
 .consigne{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;

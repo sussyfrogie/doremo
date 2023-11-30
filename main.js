@@ -175,69 +175,144 @@ const questions = [
             "musique": "fichier audio"
         },
     ];
-const card = document.getElementById('card');
-const question = card.querySelector('h1');
-const reponse = card.querySelector('p');
-const bar = document.getElementById('bar');
-const levels = document.querySelectorAll('.level');
-const btn = document.getElementById('btn');
-var conteur = 3;
+    if (window.location.href.includes("jeux.html")) {
 
+    
 
-function displayQuestion() {
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    const randomQuestion = questions[randomIndex];
-    question.textContent = randomQuestion.questions;
-    reponse.textContent = randomQuestion.reponse;
-    bar.style.width = '${conteur}%';
-    if (randomQuestion.musique === "fichier audio") { 
-        btn.style.display = "none";
-    } else {   
-        btn.style.display = "block";
-        btn.setAttribute("name", randomQuestion.musique);
+        function decompte() {
+            const timer = document.getElementById('timer');
+            let i = 10; //temps voulu en S
+            let countdownInterval;
+        
+            function updateTimer() {
+              timer.textContent = i + " secondes";
+            }
+        
+            function countdown() {
+              if (i > 0) {
+                updateTimer();
+                i--;
+              } else {
+                clearInterval(countdownInterval);
+                var audio = new Audio('defaite.mp3');
+                audio.play();
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 5000);
+              }
+            }
+        
+            return {
+              start: function() {
+                if (!countdownInterval) {
+                  countdownInterval = setInterval(countdown, 1000);
+                }
+              },
+              restart: function() {
+                clearInterval(countdownInterval);
+                i = 300;
+                countdownInterval = setInterval(countdown, 1000);
+              }
+            };
+          }
+        
+          const countdownInstance = decompte();
+        
+          document.getElementById('startBtn').addEventListener('click', function() {
+            countdownInstance.start();
+          });
+        
+          document.getElementById('startBtn').addEventListener('dblclick', function() {
+            countdownInstance.restart();
+          });
+    
+    
+    
+    const card = document.getElementById('card');
+    const question = card.querySelector('h1');
+    const reponse = card.querySelector('p');
+    const bar = document.getElementById('bar');
+    const levels = document.querySelectorAll('.level');
+    const btn = document.getElementById('btn');
+    var conteur = 3;
+    
+    function displayQuestion() {
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        const randomQuestion = questions[randomIndex];
+        question.textContent = randomQuestion.questions;
+        reponse.textContent = randomQuestion.reponse;
+        bar.style.width = '${conteur}%';
+        if (randomQuestion.musique === "fichier audio") { 
+            btn.style.display = "none";
+        } else {   
+            btn.style.display = "block";
+            btn.setAttribute("name", randomQuestion.musique);
+        }
+        if (btn.style.display === "block") {
+            console.log("etape 1")
+            btn.addEventListener('click', function() {
+                console.log(btn.getAttribute("name"));
+                var music = new Audio (btn.getAttribute("name")) ;
+                console.log(music);
+                console.log(Audio);
+                music.play(Audio);
+                music.volume = 0.5;
+            })
+        }
     }
-}
-
-displayQuestion();
-
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'o') {
-        displayQuestion();
-        levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
-        conteur--;
-        console.log(conteur)
-    } else if (event.key === 'n') {
-        displayQuestion();
-        levels.forEach(level => {
-        level.style.backgroundColor = 'rgb(119, 119, 119)';
-        conteur = 3;  
-    });
+    
+    displayQuestion();
+    
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'o') {
+            displayQuestion();
+            levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
+            const music = new Audio("oui.mp3");
+            music.play(Audio);
+            music.volume = 0.5;
+            if (conteur > 0) {
+                conteur--;
+            } else {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                const music = new Audio("victoire.mp3");
+                music.play(Audio);
+                music.volume = 0.5;
+            }
+        } else if (event.key === 'n') {
+            displayQuestion();
+            levels.forEach(level => {
+            level.style.backgroundColor = 'rgb(119, 119, 119)';
+            conteur = 3; 
+            const music = new Audio("non.mp3");
+            music.play(Audio);
+            music.volume = 0.5;
+        });
+        }
+      });
+    console.log(btn)
+    
+    
+    //popup
+    
+    document.getElementById('openPopup').addEventListener('click', function () {
+        document.getElementById('popupContainer').style.display = 'flex';
+        document.getElementById("card").style.display="none";
+      });
+      
+      document.getElementById('closePopup').addEventListener('click', function () {
+        document.getElementById('popupContainer').style.display = 'none';
+        document.getElementById("card").style.display="flex";
+      });
+    
     }
-  });
+    
+    if (window.location.href.includes("index.html")) {
 
-if (btn.style.display === "block") {
-    btn.addEventListener('click', function() {
-        console.log(btn.getAttribute("name"));
-        var music = new Audio(btn.getAttribute("name"));
-        console.log(music)
-        console.log(Audio)
-        music.play(Audio);
-    })
-
-}
-
-//popup
-
-document.getElementById('openPopup').addEventListener('click', function () {
-    document.getElementById('popupContainer').style.display = 'flex';
-  });
-  
-  document.getElementById('closePopup').addEventListener('click', function () {
-    document.getElementById('popupContainer').style.display = 'none';
-  });
-
-
-if (conteur === 0){
-        console.log (win);
+        function startgame() {
+            var audio = new Audio('intro.mp3');
+            audio.play();
+            setTimeout(function() {
+                window.location.href = 'jeux.html';
+            }, 6000);}
     }
+    
