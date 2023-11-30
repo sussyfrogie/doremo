@@ -68,7 +68,7 @@ body{
 #games {
   display: flex;
   flex-direction: row-reverse;
-  background-color: blue;
+  background-color: #FBCA04;
   height: 100%;
   width: 100%;
 }
@@ -76,7 +76,7 @@ body{
 #games main {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: #FDEEFF;
   height: 100%;
   width: 80%;
 }
@@ -86,7 +86,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  background-color: #FDEEFF;
   height: 100%;
   width: 20%;
 }
@@ -100,7 +100,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
+  background-color: #FBCA04;
+  border-radius: 25% / 50%;
   width: 500px;
   height: 300px;
 }

@@ -205,4 +205,8 @@ if (btn.style.display === "block") {
     btn.addEventListener('click', function() {
         console.log(btn.getAttribute("name"));
     })
+
+if (conteur === -1){
+    
+}
 }
