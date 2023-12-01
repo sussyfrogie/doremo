@@ -229,18 +229,18 @@ h1{
   padding-bottom: 5px;
  }
 
-#games aside #bar div {
+ aside #bar div {
   background-color: rgb(119, 119, 119);
   height: 80px;
   width: 80px;
   border: 1px solid black;
 }
 
-#games aside #bar div:first-child {
+aside #bar div:first-child {
   border-radius: 50% 50% 0% 0%;
 }
 
-#games aside #bar div:last-child {
+aside #bar div:last-child {
   border-radius: 0% 0% 50% 50%;
 }
 

@@ -82,17 +82,17 @@ const questions = [
     {
         "questions": "Quel est le titre et l'auteur de cette chanson ?",
         "reponse": "Bad Guy de Billie Eilish",
-        "musique": "bad_guy_eilish.mp3"
+        "musique": "sons/bad_guy_eilish.mp3"
     },
     {
         "questions": "Quel est le titre et l'auteur de cette chanson ?",
         "reponse": "Michael Jackson, Beat it",
-        "musique": "beat_michael_jackson.mp3"
+        "musique": "sons/beat_michael_jackson.mp3"
     },
     {
         "questions": "Avec quel artiste Koba a t il chanté sur cette musique?",
         "reponse": "Gazo",
-        "musique": "daddy_chocolat_kobalad.mp3"
+        "musique": "sons/daddy_chocolat_kobalad.mp3"
     },
     {
         "questions": "Qui est le rappeur le plus ecouté de france?",
@@ -117,12 +117,12 @@ const questions = [
     {
         "questions": "Quel est le titre et l'auteur de cette chanson ?",
         "reponse": "a sky full of stars, coldplay",
-        "musique": "sky_stars_coldplay.mp3"
+        "musique": "sons/sky_stars_coldplay.mp3"
     },
     {
         "questions": "De quel film provient cet extrait ?",
         "reponse": "Le magicien d'Oz",
-        "musique": "somewhere_magicien_oz_1.mp3"
+        "musique": "sons/somewhere_magicien_oz_1.mp3"
     },
     {
         "questions": "Quelle chanson démarre par : 'Tu ne vis que pour les caméras'",
@@ -142,7 +142,7 @@ const questions = [
     {
         "questions": "De quel film provient cet extrait ?",
         "reponse": "Le roi lion",
-        "musique": "hakuna_roi_lion.mp3"
+        "musique": "sons/hakuna_roi_lion.mp3"
     },
     {
         "questions": "Qui chante Only God Can Judge Me ?",
@@ -152,7 +152,7 @@ const questions = [
     {
         "questions": "Qui a composé ce morceau de musique  ?",
         "reponse": "Tchaikovski",
-        "musique": "casse_noisette_tchaikovski.mp3"
+        "musique": "sons/casse_noisette_tchaikovski.mp3"
     },
     {
         "questions": "En quelle année s'est déroulé la premiere edition du festival de Woodstock ?",
@@ -385,14 +385,14 @@ if (window.location.href.includes("jeux.html")) {
         if (event.key === 'o') {
             displayQuestion();
             levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
-            const music = new Audio("oui.mp3");
+            const music = new Audio("sons/oui.mp3");
             music.play(Audio);
             music.volume = 0.5;
             if (conteur > 0) {
                 conteur--;
             } else {
                 window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                const music = new Audio("victoire.mp3");
+                const music = new Audio("sons/victoire.mp3");
                 music.play(Audio);
                 music.volume = 0.5;
             }
@@ -401,7 +401,7 @@ if (window.location.href.includes("jeux.html")) {
             levels.forEach(level => {
                 level.style.backgroundColor = 'rgb(119, 119, 119)';
                 conteur = 3;
-                const music = new Audio("non.mp3");
+                const music = new Audio("sons/non.mp3");
                 music.play(Audio);
                 music.volume = 0.5;
             });
@@ -413,19 +413,27 @@ if (window.location.href.includes("jeux.html")) {
     //popup
 
     document.getElementById('openPopup').addEventListener('click', function () {
-        document.getElementById('popupContainer').style.display = 'flex';
-        document.getElementById("card").style.display = "none";
+        let popup = document.getElementById('popupContainer');
+
+        gsap.to(popup, {
+            opacity: 1, duration: 1, onStart: () => {
+                popup.style.display = 'flex';
+                document.getElementById("box-card").style.display = "none";
+            }
+        });
     });
 
     document.getElementById('closePopup').addEventListener('click', function () {
 
         let popup = document.getElementById('popupContainer');
 
-        gsap.to(popup, { opacity: 0, duration: 1, onComplete:()=>{
-            popup.style.display = 'none';
-            document.getElementById("card").style.display = "flex";
-        } });
-        
+        gsap.to(popup, {
+            opacity: 0, duration: 1, onComplete: () => {
+                popup.style.display = 'none';
+                document.getElementById("box-card").style.display = "flex";
+            }
+        });
+
     });
 
 }
