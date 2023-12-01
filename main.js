@@ -207,13 +207,13 @@ const questions = [
             return {
               start: function() {
                 if (!countdownInterval) {
-                  countdownInterval = setInterval(countdown, 1000);
+                  countdownInterval = setInterval(countdown, 500);
                 }
               },
               restart: function() {
                 clearInterval(countdownInterval);
-                i = 300;
-                countdownInterval = setInterval(countdown, 1000);
+                i = 300;//temps voulu en S
+                countdownInterval = setInterval(countdown, 500);
               }
             };
           }
