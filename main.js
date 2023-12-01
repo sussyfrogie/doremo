@@ -307,9 +307,9 @@ if (window.location.href.includes("jeux.html")) {
 
         gsap.to(popup, { opacity: 0, duration: 1, onComplete:()=>{
             popup.style.display = 'none';
+            document.getElementById("card").style.display = "flex";
         } });
-
-        document.getElementById("card").style.display = "flex";
+        
     });
 
 }
