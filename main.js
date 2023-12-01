@@ -386,7 +386,7 @@ if (window.location.href.includes("jeux.html")) {
             if (conteur > 0) {
                 conteur--;
             } else {
-                const looser = document.getElementById("win");
+                const win = document.getElementById("win");
                 win.style.display = "flex"
                 const music = new Audio("sons/victoire.mp3");
                 music.play(Audio);
