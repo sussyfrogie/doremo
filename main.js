@@ -174,6 +174,122 @@ const questions = [
         "reponse": " Florent Pagny ",
         "musique": "fichier audio"
     },
+    {
+        "questions": "De quel groupe faisait partie Beyonce?",
+        "reponse": "Destiny child",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quels rappeurs ont tourné un clip en haut de la Tour Eiffel?",
+        "reponse": "PNL",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Qui chante la chanson officielle du film 50 nuances de Grey?",
+        "reponse": "The Weeknd",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Chantez la suite des paroles : 'Je m'appelle Emilie jolie, Je m'appelle Emilie Jolie et'",
+        "reponse": "Je voudrais partir avec vous, tout au bout du ciel, sur vos ailes",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "En quelle année est sorti le single Hotline Bling de Drake?",
+        "reponse": "2015",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quelle chanson démarre par : 'Elle sort de son lit, tellement sur d'elle'",
+        "reponse": "'La seine, la seine, la seine'",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quel rappeur français a été condamné pour meurtre?",
+        "reponse": "MHD",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quel effet musical est très tendances sur TikTok ?",
+        "reponse": "Le speed up",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Comment s'appelle l'objet qui permet d'écouter des vinyles?",
+        "reponse": "Le tourne disque",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quelle princesse Disney est 'Libéré, Délivré'",
+        "reponse": "Elsa, La reine des neiges",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Qui chante All i want for Christmas is you?",
+        "reponse": "Mariah Carey",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quel chanson commence par : 'j'ai r'gardé dans l'coeur des filles'?",
+        "reponse": "Le coeur des filles, A2H",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Citez une chanson de Lana Del Ray.",
+        "reponse": "Summertimes, VideosGames, SayYes, Radio, BornToDie",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "qui a chanté la fille du coupeur de join ?",
+        "reponse": "Hubert-Félix Thiéfaine",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "Quelle rappeuse française c'est convertie à l'Islam?",
+        "reponse": "Diams",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "chanté le refrain de live is life opus.",
+        "reponse": "live is life nanabada eu life",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+    {
+        "questions": "",
+        "reponse": "",
+        "musique": "fichier audio"
+    },
+
 ];
 if (window.location.href.includes("jeux.html")) {
 
