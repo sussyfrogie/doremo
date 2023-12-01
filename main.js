@@ -251,43 +251,38 @@ const questions = [
     },
     {
         "questions": "chanté le refrain de live is life opus.",
-        "reponse": "live is life nanabada eu life",
+        "reponse": "Live is life nanabada eu life",
         "musique": "fichier audio"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre et l'auteur de cette chanson ?",
+        "reponse": "Talking to the Moon, Bruno Mars",
+        "musique": "sons/bruno.mp3"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre et l'auteur de cette chanson ?",
+        "reponse": "Tourner dans le vide, Indila",
+        "musique": "sons/indila.mp3"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre et l'auteur de cette chanson ?",
+        "reponse": "We will rock you, Queen",
+        "musique": "sons/queen.mp3"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre et l'auteur de cette chanson ?",
+        "reponse": "La chanson des restos, les enfoirés",
+        "musique": "sons/enfoires.mp3"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre et l'auteur de cette chanson ?",
+        "reponse": "Avant la douane, Jul",
+        "musique": "sons/jul.mp3"
     },
     {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
-    },
-    {
-        "questions": "",
-        "reponse": "",
-        "musique": "fichier audio"
+        "questions": "Quel est le titre de cette chanson ?",
+        "reponse": "legend never die",
+        "musique": "sons/lol.mp3"
     },
 
 ];
