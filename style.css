@@ -194,9 +194,10 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #FBCA04;
-  border-radius: 25% / 50%;
-  width: 500px;
+  background-color: #FFFFFF;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  width: 650px;
   height: 300px;
 }
 
