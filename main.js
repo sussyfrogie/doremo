@@ -346,7 +346,7 @@ if (window.location.href.includes("jeux.html")) {
 
 
 
-    const card = document.getElementById('card');
+    const card = document.getElementById('box-card');
     const question = card.querySelector('h1');
     const reponse = card.querySelector('p');
     const bar = document.getElementById('bar');

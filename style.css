@@ -203,18 +203,6 @@ body{
   height: 350px;
 }
 
-.inside-card{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 84px;
-  margin-right: 84px;
-  overflow: hidden;
-}
-
 h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
