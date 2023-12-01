@@ -310,7 +310,7 @@ if (window.location.href.includes("jeux.html")) {
                 i--;
             } else {
                 clearInterval(countdownInterval);
-                var audio = new Audio('defaite.mp3');
+                var audio = new Audio('sons/defaite.mp3');
                 audio.play();
                 const looser = document.getElementById("looser");
                 looser.style.display = "flex"
@@ -391,7 +391,8 @@ if (window.location.href.includes("jeux.html")) {
             if (conteur > 0) {
                 conteur--;
             } else {
-                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                const looser = document.getElementById("win");
+                win.style.display = "flex"
                 const music = new Audio("sons/victoire.mp3");
                 music.play(Audio);
                 music.volume = 0.5;
@@ -441,7 +442,7 @@ if (window.location.href.includes("jeux.html")) {
 if (window.location.href.includes("index.html")) {
 
     function startgame() {
-        var audio = new Audio('intro.mp3');
+        var audio = new Audio('sons/intro.mp3');
         audio.play();
         setTimeout(function () {
             window.location.href = 'jeux.html';
