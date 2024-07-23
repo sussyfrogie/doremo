@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doremo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,300;1,300;1,700&display=swap"
+            rel="stylesheet">
+        <style>
+        
+         body{
+            margin: 0;
+            background-color: #FDEEFF;
+            width: 100%; 
+            height: 100vh;
+        }
+        header {
+            height: 150px;
+            background-color: none; 
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-top: 35px;
+            padding-right: 40px; 
+        }
+        .logo{
+            height: 100%;
+        }
+        .questionMark{
+            background-color: #FBCA04;
+            height: 50px;
+            width: 50px;
+            border: 2px solid #FBCA04;
+            border-radius: 8px;
+            transition: all 0.5s;
+        }
+        .questionMark:hover{
+            background-color: #f7da66;
+            border: 2px solid  #FDEEFF;
+        }
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 30px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #closePopup {
+            float: right;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #555;
+         }
+        .consigne{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 37px;
+        }
+        .box-consigne{
+            margin-left: 83px;
+            margin-right: 83px;
+        }
+        .logo-phrase{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .small-box{
+            width: 56px;
+        }
+       
+         
+    </style>
+</head>
+<body>
+    <main>
+       
+    </main>
+</body>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.svg" alt class="logo">
+        </header>
+        <main>
+            <button id="openPopup" class="questionMark"><img
+                    src="img/question mark.svg" alt></button>
+            <div id="popupContainer" class="popup-container">
+                <div class="popup-content">
+                    <button id="closePopup" class="closePopup"><img
+                            src="img/X.svg" alt></button>
+                    <p class="consigne">consignes</p>
+                    <div class="box-consigne">
+                        <div class="logo-phrase">
+                            <img src="img/vrai.svg" alt>
+                            <div class="small-box"></div>
+                            <p>appui sur bouton vert ou vrai = jauge monte +1 pt
+                                et le programme pioche une autre question
+                                aléatoirement.</p>
+                        </div>
+                        <div class="logo-phrase">
+                            <img src="img/restart.svg" alt>
+                            <div class="small-box"></div>
+                            <p>pour relancer le jeu.</p>
+                        </div>
+                        <div class="logo-phrase">
+                            <img src="img/faux.svg" alt>
+                            <div class="small-box"></div>
+                            <p>appui sur rouge ou faux = la jauge descend à 0 et
+                                le programme pioche une autre question
+                                aléatoirement.</p>
+                        </div>
+                        <div class="logo-phrase">
+                            <img src="img/4pts.svg" alt>
+                            <div class="small-box"></div>
+                            <p>4 pts atteint va allumer le jingle de victoire et
+                                le timer s’arrête.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="popup.js"></script>
+    </body>
+</html>

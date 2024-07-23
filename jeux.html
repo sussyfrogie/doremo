@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js" defer></script>
+    <title>Doremo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,300;1,300;1,700&display=swap"
+            rel="stylesheet">
+</head>
+<body>
+    <div id="looser">
+        <h1>
+            Defaite
+        </h1>
+    </div>
+    <div id="win">
+        <h1>
+            Victoire
+        </h1>
+    </div>
+        <main>
+
+            <div class="top">
+
+                <div class="mains">
+                    <button id="openPopup" class="questionMark">
+                        <img src="img/question mark.svg" alt></button>
+
+                        <div id="popupContainer" class="popup-container">
+                        <div class="popup-content">
+                            <button id="closePopup" class="closePopup">
+                                <img src="img/X.svg" alt></button>
+                            <p class="consigne">Consignes</p>
+
+                            <div class="box-consigne">
+                                <div class="logo-phrase">
+                                    <img src="img/4pts.svg" alt>
+                                    <div class="small-box"></div>
+                                    <p>Le but est d'atteindre 4 points avant l'arret du timer.</p>
+                                </div>
+                                <div class="logo-phrase">
+                                    <img src="img/restart.svg" alt></img>
+                                    <div class="small-box"></div>
+                                    <p>Appuiller sur le boutton start/ relancez pour commencé ou relancer le jeu.</p>
+                                </div>
+                                <div class="logo-phrase">
+                                    <img src="img/vrai.svg" alt></img>
+                                    <div class="small-box"></div>
+                                    <p>
+                                        Appuiller sur " O " pour validé une reponce
+                                    </p>
+                                </div>
+                                <div class="logo-phrase">
+                                    <img src="img/faux.svg" alt></img>
+                                    <div class="small-box"></div>
+                                    <p>
+                                        Appuiller sur " N " pour une mauvaise reponce
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                </div>
+                <img src="img/logo.svg" alt class="logo1">
+            </div>
+
+            <div class="game-container">
+                <div id="bar">
+                    <div class="level"></div>
+                </div>
+                <div id="box-card">
+                    <div id="btn">
+                        <img src="img/du-son.png" alt="">
+                    </div>
+                    <div class="gameContain">
+                        <h1>Par combien de personnes est composé le groupe des Beatles ?</h1>
+                        <p>4</p>
+                        <div class="block-card"></div>
+                        <h1 id="timer">05:00</h1>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons-container">
+                <div class="faux  action-button">
+                    <img src="/img/faux.svg" alt="Button Faux">
+                </div>
+                <div class="restart  action-button">
+                    <img src="/img/restart.svg" alt="Button restart">
+                </div>
+                <div class="vrai  action-button">
+                    <img src="/img/vrai.svg" alt="Button vrai">
+                </div>
+            </div>
+            
+        </main>
+        <aside>
+            
+            
+        </aside>
+    </section>
+</body>
+</html>

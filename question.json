@@ -1,0 +1,164 @@
+{
+    "ensemble": [
+        {
+            "questions": "Par combien de personnes est composé le groupe des Beatles?",
+            "reponse": "4",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Par qui est interprété La bohème ?",
+            "reponse": "Charles Aznavour",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quel rappeur a dit 'Et tout ça c'est le destin'?",
+            "reponse": "Ninho",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "En quelle année est sorti le single Crazy in Love de Beyonce?",
+            "reponse": "2003",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Chantez la suite des paroles : 'Hello...'",
+            "reponse": "It's me",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui a repris 'Envole-moi' de JJ.Goldman en 2012?",
+            "reponse": "TAL et M.pokora",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quelle chanson démarre par : 'Je n'ai qu'une philosophie'",
+            "reponse": "Ma philosophie, Amel Bent",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quelle chanson démarre par : 'Je vous parle d'un temps...'",
+            "reponse": "La bohème ",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui est le frère de Maitre Gims?",
+            "reponse": "Dadju",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Chantez la suite des paroles : 'Ne la laisse pas tomber...'",
+            "reponse": "'Elle est si fragile, etre une femme libérée : tu sais c'est pas si facile'",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "De quel groupe est parti Black M?",
+            "reponse": "Sexion d'assaut",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui a gagné l'eurovision 2023?",
+            "reponse": "Loreen, Suède",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "De qui est la chanson Mistral Gagnant ?",
+            "reponse": "Renaud",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "De quel origine est Bob Marley?",
+            "reponse": "Jamaicain",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui a repris la Marseillaise en version reggae ?",
+            "reponse": "Serge Gainsbourg",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui a composé la Sonate au Clair de lune ?",
+            "reponse": "Beethoven",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quel est le titre et l'auteur de cette chanson ?",
+            "reponse": "Bad Guy de Billie Eilish",
+            "musique": "Bad Guy - Billie Eilish"
+        },
+        {
+            "questions": "Quel est le titre et l'auteur de cette chanson ?",
+            "reponse": "Michael Jackson, Beat it",
+            "musique": "Michael Jackson, Beat it"
+        },
+        {
+            "questions": "Avec quel artiste Koba a t il chanté sur cette musique?",
+            "reponse": "Gazo",
+            "musique": "Daddy chocolat, koba/Gazo"
+        },
+        {
+            "questions": "Qui est le rappeur le plus ecouté de france?",
+            "reponse": "Jul",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Combien de temps - environs - dure la chanson Bohemian Rhapsody de Queen ?",
+            "reponse": "six minutes",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Par qui est interprété La vie en rose ?",
+            "reponse": "Edith Piaf",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "A quelle famille d'instruments appartient le piano ?",
+            "reponse": "la famille des instruments à cordes",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quel est le titre et l'auteur de cette chanson ?",
+            "reponse": "a sky full of stars, coldplay",
+            "musique": "a sky full of stars, coldplay"
+        },
+        {
+            "questions": "De quel film provient cet extrait ?",
+            "reponse": "Le magicien d'Oz",
+            "musique": "extrait Somewhere over the rainbow (de Judy Garland)"
+        },
+        {
+            "questions": "Quelle chanson démarre par : 'Tu ne vis que pour les caméras'",
+            "reponse": "Gisèle, Luidji",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Quelle chanteuse n'a pas gagné The Voice mais a eu un succès fulgurant après?",
+            "reponse": "Louane",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Dans quel groupe David Gilmour et Roger Watters ont fait partie ?",
+            "reponse": "Pink Foyd",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "De quel film provient cet extrait ?",
+            "reponse": "Le roi lion",
+            "musique": "Hakuna Matata"
+        },
+        {
+            "questions": "Qui chante Only God Can Judge Me ?",
+            "reponse": "2Pac",
+            "musique": "fichier audio"
+        },
+        {
+            "questions": "Qui a composé ce morceau de musique  ?",
+            "reponse": "Tchaikovski",
+            "musique": "extrait Casse-Noisette"
+        },
+        {
+            "questions": "En quelle année s'est déroulé la premiere edition du festival de Woodstock ?",
+            "reponse": "1969",
+            "musique": "fichier audio"
+        }
+    ]
+}
