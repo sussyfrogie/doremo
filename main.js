@@ -384,6 +384,7 @@ if (window.location.href.includes("jeux.html")) {
             music.play(Audio);
             music.volume = 0.5;
         } 
+         //cobaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         level.style.height = `${conteur * 25}%`;
         if (conteur != 0 && conteur != 4) {
             level.style.borderTop = '1.5px solid #000';

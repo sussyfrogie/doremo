@@ -222,7 +222,24 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
+
+.qa-container {
+  position: absolute;
+  transform: translate(0%, -0%);
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.questionss {
+  width: 100%;
+}
+
 
 #box-card {
   display: flex;
@@ -232,7 +249,7 @@ body{
   background-color: #FFFFFF;
   border: 1.5px solid black;
   border-radius: 30px;
-  width: 800px;
+  width: 650px;
   height: 340px;
 }
 
@@ -252,7 +269,9 @@ h1{
   height: 43px;
  }
 
- #timer{
+ #timer {
+  position: absolute;
+  transform: translate(0%, 200%) !important;
   background-color: #FBCA04;
   border: 1px solid black;
   width: 75px;
@@ -261,7 +280,9 @@ h1{
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
- }
+  text-align: center;
+}
+
 #bar{
   width: 52px;
   height: 340px;
@@ -288,7 +309,7 @@ h1{
   gap: 52px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: calc(50% - 52px);
   transform: translate(-50%, -50%);
 }
 
@@ -335,8 +356,17 @@ aside #bar div:last-child {
   transform: translate(-50%, 0);
 }
 
-.action-button {
-  height: 95px;
-  width: 95px;
+
+.action-buttons-container .action-button {
+  width: 100px;  /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons-container .action-button img {
+  width: 120%;  /* Adjust width as needed */
+  height: 120%; /* Adjust height as needed */
 }
 
