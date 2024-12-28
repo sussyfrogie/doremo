@@ -292,7 +292,7 @@ if (window.location.href.includes("jeux.html")) {
 
     function decompte() {
         const timer = document.getElementById('timer');
-        let i = 300; //temps voulu en S
+        let i = 60; //temps voulu en S
         let countdownInterval;
 
         function updateTimer() {
@@ -325,7 +325,7 @@ if (window.location.href.includes("jeux.html")) {
             },
             restart: function () {
                 clearInterval(countdownInterval);
-                i = 300;
+                i = 60;
                 countdownInterval = setInterval(countdown, 1000);
             }
         };
