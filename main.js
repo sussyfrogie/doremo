@@ -288,7 +288,7 @@ const questions = [
 ];
 if (window.location.href.includes("jeux.html")) {
 
-
+    
 
     function decompte() {
         const timer = document.getElementById('timer');
@@ -296,7 +296,9 @@ if (window.location.href.includes("jeux.html")) {
         let countdownInterval;
 
         function updateTimer() {
-            timer.textContent = i + " secondes";
+            const minutes = Math.floor(i / 60);
+            const remainingSeconds = i % 60;
+            timer.textContent = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`
         }
 
         function countdown() {
@@ -330,14 +332,7 @@ if (window.location.href.includes("jeux.html")) {
     }
 
     const countdownInstance = decompte();
-
-    document.getElementById('startBtn').addEventListener('click', function () {
-        countdownInstance.start();
-    });
-
-    document.getElementById('startBtn').addEventListener('dblclick', function () {
-        countdownInstance.restart();
-    });
+    countdownInstance.start();
 
 
 
@@ -345,9 +340,13 @@ if (window.location.href.includes("jeux.html")) {
     const question = card.querySelector('h1');
     const reponse = card.querySelector('p');
     const bar = document.getElementById('bar');
-    const levels = document.querySelectorAll('.level');
+    const level = document.querySelector('.level');
+    const btnFaux = document.querySelector('.faux');
+    const btnVrai = document.querySelector('.vrai');
+    const btnRestart = document.querySelector('.restart');
     const btn = document.getElementById('btn');
-    var conteur = 3;
+    var conteur = 0;
+    var musicQuestion;
 
     function displayQuestion() {
         const randomIndex = Math.floor(Math.random() * questions.length);
@@ -358,53 +357,70 @@ if (window.location.href.includes("jeux.html")) {
         if (randomQuestion.musique === "fichier audio") {
             btn.style.display = "none";
         } else {
-            btn.style.display = "block";
+            btn.style.display = "none";
             btn.setAttribute("name", randomQuestion.musique);
-        }
-        if (btn.style.display === "block") {
-            console.log("etape 1")
-            btn.addEventListener('click', function () {
-                console.log(btn.getAttribute("name"));
-                var music = new Audio(btn.getAttribute("name"));
-                console.log(music);
-                console.log(Audio);
-                music.play(Audio);
-                music.volume = 0.5;
-            })
+            musicQuestion = new Audio(btn.getAttribute("name"));
+            musicQuestion.play(Audio);
+            musicQuestion.volume = 0.5;
         }
     }
 
     displayQuestion();
 
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'o') {
-            displayQuestion();
-            levels[conteur].style.backgroundColor = 'rgb(37,101,237)';
-            const music = new Audio("sons/oui.mp3");
+    btnVrai.addEventListener('click', function () {
+        if (musicQuestion != null) {
+            musicQuestion.pause();
+        }
+        displayQuestion();
+        const music = new Audio("sons/oui.mp3");
+        music.play(Audio);
+        music.volume = 0.5;
+        conteur++;
+        countdownInstance.restart();
+        if (conteur == 4) {
+            const win = document.getElementById("win");
+            win.style.display = "flex"
+            const music = new Audio("sons/victoire.mp3");
             music.play(Audio);
             music.volume = 0.5;
-            if (conteur > 0) {
-                conteur--;
-            } else {
-                const win = document.getElementById("win");
-                win.style.display = "flex"
-                const music = new Audio("sons/victoire.mp3");
-                music.play(Audio);
-                music.volume = 0.5;
-            }
-        } else if (event.key === 'n') {
-            displayQuestion();
-            levels.forEach(level => {
-                level.style.backgroundColor = 'rgb(119, 119, 119)';
-                conteur = 3;
-                const music = new Audio("sons/non.mp3");
-                music.play(Audio);
-                music.volume = 0.5;
-            });
+        } 
+        level.style.height = `${conteur * 25}%`;
+        if (conteur != 0 && conteur != 4) {
+            level.style.borderTop = '1.5px solid #000';
+        } else {
+            level.style.borderTop = 'none';
+        }
+
+    })
+
+    btnFaux.addEventListener('click', function() {
+        if (musicQuestion != null) {
+            musicQuestion.pause();
+        }
+        conteur = 0;
+        displayQuestion();
+        const music = new Audio("sons/non.mp3");
+        music.play(Audio);
+        music.volume = 0.5;
+        level.style.height = `${conteur * 25}%`;
+        countdownInstance.restart();
+        if (conteur != 0 && conteur != 4) {
+            level.style.borderTop = '1.5px solid #000';
+        } else {
+            level.style.borderTop = 'none';
+        }
+    })
+
+    btnRestart.addEventListener('click', function(){
+        conteur = 0;
+        level.style.height = `0%`;
+        countdownInstance.restart();
+        if (conteur != 0 && conteur != 4) {
+            level.style.borderTop = '1.5px solid #000';
+        } else {
+            level.style.borderTop = 'none';
         }
     });
-    console.log(btn)
-
 
     //popup
 
@@ -434,7 +450,7 @@ if (window.location.href.includes("jeux.html")) {
 
 }
 
-if (window.location.href.includes("index.html")) {
+
 
     function startgame() {
         var audio = new Audio('sons/intro.mp3');
@@ -443,4 +459,4 @@ if (window.location.href.includes("index.html")) {
             window.location.href = 'jeux.html';
         }, 6000);
     }
-}
+
